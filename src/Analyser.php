@@ -2,12 +2,16 @@
 
 namespace WhichBrowser;
 
+use WhichBrowser\Analyser\Camouflage;
+use WhichBrowser\Analyser\Corrections;
+use WhichBrowser\Analyser\Derive;
+use WhichBrowser\Analyser\Header;
 use WhichBrowser\Constants;
 use WhichBrowser\Model\Main;
 
 class Analyser
 {
-    use Analyser\Header, Analyser\Derive, Analyser\Corrections, Analyser\Camouflage;
+    use Header, Derive, Corrections, Camouflage;
 
     private $data;
 

@@ -2,9 +2,17 @@
 
 namespace WhichBrowser\Analyser\Header;
 
+use WhichBrowser\Analyser\Header\Useragent\Application;
+use WhichBrowser\Analyser\Header\Useragent\Bot;
+use WhichBrowser\Analyser\Header\Useragent\Browser;
+use WhichBrowser\Analyser\Header\Useragent\Device;
+use WhichBrowser\Analyser\Header\Useragent\Engine;
+use WhichBrowser\Analyser\Header\Useragent\Os;
+use WhichBrowser\Analyser\Header\Useragent\Using;
+
 class Useragent
 {
-    use Useragent\Os, Useragent\Device, Useragent\Browser, Useragent\Application, Useragent\Using, Useragent\Engine, Useragent\Bot;
+    use Os, Device, Browser, Application, Using, Engine, Bot;
 
     private $data;
 
