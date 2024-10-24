@@ -1,5 +1,5 @@
 {
-    "name": "whichbrowser/parser",
+    "name": "4leads/parser",
 
     "description": "Useragent sniffing library for PHP",
     "keywords": ["useragent","browser","sniffing", "ua"],
